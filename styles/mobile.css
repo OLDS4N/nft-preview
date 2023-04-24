@@ -30,7 +30,7 @@ body {
 }
 
 .card {
-    background-color: var(--cor5);
+    background-color: var(--cor4);
     border-radius: 10px;
     width: 375px;
     padding: 24px;
