@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --cor1:hsl(215, 51%, 70%);
+    --cor2:hsl(178, 100%, 50%);
+    --cor3:hsl(217, 54%, 11%);
+    --cor4:hsl(216, 50%, 16%);
+    --cor5:hsl(215, 32%, 27%);
+    --cor6:hsl(0, 0%, 100%);
+
+    --OutFit: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor3);
+    
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--OutFit);
+    font-size: 18px;
+}
+
+.card {
+    background-color: var(--cor5);
+    border-radius: 10px;
+    width: 375px;
+    padding: 24px;
+}
+
+.img-block {
+    position: relative;
+}
+
+.view-block {
+    background-color: hsl(178, 100%, 50%, 50%);
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.view-block:hover {
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.view-block img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-nft {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.img-nft::after {
+    content: url(../img/icon-view.svg);
+    background: var(--cor2);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.45em;    
+    padding-top: 29px;
+    color: var(--cor6);
+}
+
+h1:hover {
+    cursor: pointer;
+    color: var(--cor2);
+}
+
+.description {
+    font-size: 1.05em;
+    font-weight: 300;
+    padding-top: 26px;
+    line-height: 1.7em;
+    color: var(--cor1);
+}
+
+.line-price {
+    padding-top: 24px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--cor1);
+}
+
+.price {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--cor2);
+}
+
+.clock {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: var(--cor1);
+}
+
+.footer {
+    padding-top: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.author-img {
+    width: 40px;
+    border: 2px solid var(--cor6);
+    border-radius: 25px;
+}
+
+.footer p {
+    color: var(--cor1);
+    padding-left: 15px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--cor6);
+}
+
+.footer a:hover {
+    color: var(--cor2);
+}
