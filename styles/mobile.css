@@ -31,7 +31,7 @@ body {
 
 .card {
     background-color: var(--cor4);
-    border-radius: 10px;
+    border-radius: 15px;
     width: 375px;
     padding: 24px;
 }
